@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/sgml/loosedtd.html">
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="keywords" content="FAQ, supported files, system requirements, default, wrapper, tar, gzip, bzip2, tgz, archiving, compressing, Untar, issues, command line">
+		<meta name="description" content="Frequently Asked Questions">
+		<link media="all" rel="stylesheet" href="../sty/task_style.css">
+		<title>FAQ</title>
+	</head>
+
+    <body>
+    
+    	<div id="banner">
+		<a name="faq"></a>
+			<div id="machelp">
+				<a class="bread" href="../GUITarHelp.html">GUI Tar Help</a>
+			</div>
+		</div>
+		
+		<hr class = "hidden">
+		
+		<div id="mainbox">
+
+			<h3 class = "pagetitle">Frequently Asked Questions</h3>
+
+			<ul class = "faq_list">
+				<li>
+					<a name = "support"></a>
+					<b>What files are supported by GUI Tar?</b>
+					<p>GUI Tar Compressor can compress files into either .7z, .tar, .tbz, .tgz, .gz, .bz2, .Z, or .zip formats. <br />
+					GUI Tar Extractor can uncompress files from .7z, .tar, .tar.gz, .dmg.gz, .svgz, .gz, .tgz, .tar.z, .z, .Z, .tar.Z, .taz, .tbz, .tbz2, .bz, .bz2, .rar, and .zip file formats.  <br />
+					<a href = "supported_files.html">List of supported files</a> </p>
+				
+				</li>
+				
+				<li>
+					<a name = "requirements"></a>
+					<b>What are the system requirements?</b>
+					<p>GUI Tar 1.2 requires Mac OS 10.3.9 or later.  GUI Tar has been tested on systems running Mac OS 10.3.9 through 10.6.</p>
+				</li>
+				
+				<li>
+					<a name = "known_issues"></a>
+					<b>What are GUI Tar's known issues?</b>
+					<p>
+						<ul>
+							<li>Password-encrypted zip files are not supported under GUI Tar 1.2.</li>
+							<li>Occasionally, a process cannot be canceled once is has begun running. This case has been observed when opening .dmg.gz files.</li>
+							<li>GUI Tar cannot always ensure that both data and resource forks on Classic Mac OS files will be saved when compressed or archived.  Some formats, such as <kbd>tar</kbd>, will retain the resource fork if Mac OS 10.4 or later is being used.</li>
+						</ul>
+					</p>
+				</li>
+								
+				<li>
+					<a name = "default"></a>
+					<b>How to set GUI Tar as the default program</b>
+					
+					<p>To set GUI Tar as the default application to uncompress and unarchive files, follow these directions:
+
+					<ol>
+					  <li>Select a <a href = "supported_files.html">supported file</a> (.tar, .gz, .tgz, .bz2, et cetera) in a Finder window.</li>
+					  <li>Open the Get Info window by one of these methods: <br />
+						  <b>&#183;</b> Select Get Info from the File menu <br />
+						  <b>&#183;</b> Press the Control key and click with the mouse and select Get Info from the context-sensitive menu <br />
+						  <b>&#183;</b> Right-click on the file and select Get Info from the context-sensitive menu <br />
+						  <b>&#183;</b> Use the key combination &#8984;-I
+					  </li>
+					  <li>Expand the Open With section.  Change the drop down menu to GUI Tar.</li>
+					  <li>Click on the Change All button to set all of files of a particular type to open up using GUI Tar.</li>
+					  <li>Close the Get Info window.</li>
+					</ol>
+					</p>
+				</li>
+
+				<li>
+					<a name = "wrapper"></a>
+					<b>What is a wrapper?</b>
+					<p>A wrapper is a program which acts as a graphical front end to a system utility. </p>
+				</li>
+				
+				<li>
+					<a name = "difference"></a>
+					<b>What is the difference between archiving and compressing?</b>
+					<p>Archiving is the process of collecting and storing a group of files and directories into one file.  The tar utility performs this action.  </p>
+					<p>Compression is the act of shrinking the size of a file, which is quite useful in sending large files over the internet. </p>
+				</li>
+				
+				<li>
+					<a name = "versus"></a>
+					<b>What are the differences between GUI Tar and its sister application Untar?</b>
+					<p>Untar is used to uncompress and unarchive files from a variety of formats.</p>
+					<p>GUI Tar is a more comprehensive tool which not only encompasses all of Untar's functionality, but also adds the ability to archive and compress files.</p>
+
+				</li>
+					
+				<li>
+					<a name = "replacement"></a>
+					<b>Is GUI Tar a replacement for Untar?</b>
+					<p>Yes.  GUI Tar was born from the same roots as Untar, but Untar's development has been discontinued.  Since GUI Tar is a superset of Untar, all of Untar's functionality is already available in GUI Tar.</p>
+				</li>
+
+				<li>
+					<a name = "tar"></a>
+					<b>What is tar?</b>
+					<p>Tar is a UNIX utility which stands for <b>T</b>ape <b>Ar</b>chiver.  Tar can either extract or combine files from/to a single .tar file.  The UNIX manual (man) page for tar states: </p>
+					<p><kbd>
+					The tar command creates, adds files to, or extracts files from an archive
+					file in tar format.  A tar archive is often stored on a magnetic tape,
+					but can be a floppy or a regular disk file.
+					</kbd></p>
+				</li>
+				
+				<li>
+					<a name = "gz"></a>
+					<b>What is .gz, .tgz, gzip, gunzip?</b>
+					<p>When a group of files are archived into a single file, they are not compressed.  The gzip utility can take a file, such as somefile.tar, and compress it to make the file size smaller.  Often, compressed and archived files will end with either the .tar.gz or .tgz extension, which signifies they have been archived and compressed.</p>
+					<p>Gunzip is the opposite of gzip, and it uncompresses a file, returning it to its original state. </p>
+				</li>
+					
+				<li>
+					<a name = "howto-untar"></a>
+					<b>How to I "untar" a file from the command line?</b>
+					<ul>
+						<li><b>Tar archive: </b><kbd>tar -xvf somefile.tar</kbd></li>
+						<li><b>Gzipped tar archive: </b><kbd>tar -xvzf somefile.tgz</kbd></li>
+						<li><b>Bzipped tar archive: </b><kbd>tar -xvjf somefile.tbz</kbd></li>
+					</ul>
+				</li>
+			
+				<li>
+					<a name = "howto-tar"></a>
+					<b>How do I "tar" a file from the command line?</b>
+					<ul>
+						<li><b>Tar archive: </b><kbd>tar -cpvf somefile.tar file1 file2 file3</kbd></li>
+						<li><b>Gzipped tar archive: </b><kbd>tar -cpvzf somefile.tgz file1 file2 file3</kbd></li>
+						<li><b>Bzipped tar archive: </b><kbd>tar -cpvjf somefile.tbz file1 file2 file3</kbd></li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+
+			<p></p>
+		
+		</div>
+	</body>
+
+</html>

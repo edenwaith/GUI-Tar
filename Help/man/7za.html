@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/sgml/loosedtd.html">
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="keywords" content="7z, 7za, 7-zip, man, manual, man page">
+		<meta name="description" content="7za man page">
+		<link media="all" rel="stylesheet" href="../sty/task_style.css">
+		<title>7za man page</title>
+	</head>
+
+    <body>
+    
+    	<div id="banner">
+		<a name="7za-man"></a>
+			<div id="machelp">
+				<a class="bread" href="../GUITarHelp.html">GUI Tar Help</a>
+			</div>
+		</div>
+		
+		<hr class = "hidden">
+		
+		<div id="mainbox">
+
+
+<p>
+<!-- http://linux.com.hk/penguin/man/1/7za.html -->
+<pre>
+7za(1)                                                 7za(1)
+
+
+NAME
+        7-Zip - A file archiver with highest compression ratio
+
+SYNOPSIS 
+        7za  [adeltux]  [-]  [SWITCH]  <ARCHIVE_NAME>  <ARGUMENTS>... 
+
+ 
+DESCRIPTION 
+        7-Zip is a file archiver with the highest compression ratio. The 
+        program supports 7z (that implements LZMA compression algorithm), ZIP,
+        CAB, ARJ, GZIP, BZIP2, TAR, CPIO, RPM and DEB formats. Compression 
+        ratio in the new 7z format is 30-50% better than ratio in ZIP format.
+         
+        7za is a stand-alone executable. 7za handles less archive formats than
+        7z, but does not need any others.
+
+ 
+FUNCTION LETTERS 
+        a 
+            Add
+        d 
+            Delete
+        e 
+            Extract
+        l 
+            List
+        t 
+            Test
+        u 
+            Update
+        x 
+            eXtract with full paths  
+
+ 
+SWITCHES 
+        -ai 
+            Include archives
+        -ax 
+            eXclude archives
+        -bd 
+            Disable percentage indicator
+        -i 
+            Include filenames
+        -m 
+            Set Compression Method
+        -o 
+            Set Output directory
+        -p 
+            Set Password
+        -sfx 
+            Create SFX archive
+        -si 
+            Read data from StdIn
+        -so 
+            Write data to StdOut
+        -t 
+            Type of archive
+        -v 
+            Create volumes
+        -u 
+            Update options
+        -w 
+            Set Working directory
+        -x 
+            Exclude filenames
+        -y 
+            Assume Yes on all queries  
+
+ 
+Backup and limitations 
+        DO NOT USE the 7-zip format for backup purpose on Linux/Unix because :
+        - 7-zip does not store the owner/group of the file. 
+        
+        On Linux/Unix, in order to backup directories you must use tar :  
+        - to backup a directory : tar cf - directory | 7za a -si directory.tar.7z  
+        - to restore your backup : 7za x -so directory.tar.7z | tar xf - 
+        
+        If you want to send files and directories (not the owner of file) to 
+        others Unix/MacOS/Windows users, you can use the 7-zip format. 
+        
+          example : 7za a directory.7z directory 
+         
+        Do not use "-r" because this flag does not do what you think. Do not 
+        use directory/* because of ".*" files (example : "directory/*" does not
+        match "directory/.profile")
+
+EXAMPLE 1 
+        7za a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on archive.7z dir1 
+            adds all files from directory "dir1" to archive archive.7z using 
+            "ultra settings"
+        -t7z 
+            7z archive
+        -m0=lzma 
+            lzma method
+        -mx=9 
+            level of compression = 9 (Ultra)
+        -mfb=64 
+            number of fast bytes for LZMA = 64
+        -md=32m 
+            dictionary size = 32 megabytes
+        -ms=on 
+            solid archive = on
+         
+EXAMPLE 2
+        7za a -sfx archive.exe dir1 add all files from directory "dir1" to SFX
+        archive archive.exe (Remark : SFX archive MUST end with ".exe")
+        
+MORE EXAMPLES 
+        You will find more examples in /usr/share/doc/p7zip/DOCS/MANUAL .
+
+SEE ALSO 
+        7z(1) 
+
+AUTHOR 
+        Written for Debian by Mohammed Adnene Trojette.
+ </pre>
+</p>
+			<p></p>
+		
+		</div>
+	</body>
+
+</html>

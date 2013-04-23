@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/sgml/loosedtd.html">
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="keywords" content="tar, tape archive, man, manual, man page">
+		<meta name="description" content="tar man page">
+		<link media="all" rel="stylesheet" href="../sty/task_style.css">
+		<title>tar man page</title>
+	</head>
+
+    <body>
+    
+    	<div id="banner">
+		<a name="tar-man"></a>
+			<div id="machelp">
+				<a class="bread" href="../GUITarHelp.html">GUI Tar Help</a>
+			</div>
+		</div>
+		
+		<hr class = "hidden">
+		
+		<div id="mainbox">
+
+
+<p>
+<pre>
+TAR(1)                  System General Commands Manual                  TAR(1)
+
+NAME
+     tar - tape archiver
+
+SYNOPSIS
+     tar [-]{crtux}[befhmopvwzHLPXZ014578] [archive] [blocksize] [-C directory
+         ] [-s replstr ] file1 [file2...]
+
+DESCRIPTION
+     The tar command creates, adds files to, or extracts files from an archive
+     file in tar format.  A tar archive is often stored on a magnetic tape,
+     but can be a floppy or a regular disk file.
+
+     One of the following flags must be present:
+
+     -c            Create new archive, or overwrite an existing archive,
+                   adding the specified files to it.
+
+     -r            Append the named new files to existing archive.  Note that
+                   this will only work on media on which an end-of-file mark
+                   can be overwritten.
+
+     -t            List contents of archive.  If any files are named on the
+                   command line, only those files will be listed.
+
+     -u            Alias for -r
+
+     -x            Extract files from archive.  If any files are named on the
+                   command line, only those files will be extracted from the
+                   archive.  If more than one copy of a file exists in the
+                   archive, later copies will overwrite earlier copies during
+                   extration.
+
+     In addition to the flags mentioned above, any of the following flags may
+     be used:
+
+     -b blocking factor
+                   Set blocking factor to use for the archive, tar uses 512
+                   byte blocks.  The default is 20, the maximum is 126.
+                   Archives with a blocking factor larger 63 violate the 
+POSIX
+                   standard and will not be portable to all systems.
+
+     -e            Stop after first error.
+
+     -f archive    Filename where the archive is stored.  Defaults to
+                   /dev/rst0
+
+     -h            Follow symbolic links as if they were normal files or
+                   directories.
+
+     -m            Do not preserve modification time.
+
+     -O            Write old-style (non-POSIX) archives.
+
+     -o            Don't write directory information that the older (V7) style
+                   tar is unable to decode.  This implies the -O flag.
+
+     -p            Preserve user id, group id, file mode, access and modifica-
+                   tion times if possible.  The user id and group id will only
+                   be set if the user is the superuser (unless these values
+                   correspond to the user's user and group ids).
+
+     -s replstr    Modify the file or archive member names specified by the
+                   pattern or file operands according to the substitution
+                   expression replstr, using the syntax of the ed(1) utility
+                   regular expressions.  The format of these regular expres-
+                   sions are:
+                         /old/new/[gp]
+                   As in ed(1), old is a basic regular expression and new can
+                   contain an ampersand (&), \n (where n is a digit) back-ref-
+                   erences, or subexpression matching.  The old string may
+                   also contain &lt;newline&gt; characters.  Any non-null character
+                   can be used as a delimiter (/ is shown here).  Multiple -s
+                   expressions can be specified.  The expressions are applied
+                   in the order they are specified on the command line, termi-
+                   nating with the first successful substitution.  The
+                   optional trailing g continues to apply the substitution
+                   expression to the pathname substring which starts with the
+                   first character following the end of the last successful
+                   substitution. The first unsuccessful substitution stops the
+                   operation of the g option.  The optional trailing p will
+                   cause the final result of a successful substitution to be
+                   written to standard error in the following format:
+                         &lt;original pathname&gt; &gt;&gt; &lt;new pathname&gt;
+                   File or archive member names that substitute to the empty
+                   string are not selected and will be skipped.
+
+     -v            Verbose operation mode. 
+
+     -w            Interactively rename files.  This option causes tar to
+                   prompt the user for the filename to use when storing or
+                   extracting files in an archive.
+
+     -z            Compress archive using gzip.
+
+     -C directory  This is a positional argument which sets the working direc-
+                   tory for the following files.  When extracting, files will
+                   be extracted into the specified directory; when creating,
+                   the specified files will be matched from the directory.
+
+     -H            Follow symlinks given on command line only.
+
+     -L            Follow all symlinks.
+
+     -P            Do not strip leading slashes (``/'') from pathnames.  The
+                   default is to strip leading slashes.
+
+     -X            Do not cross mount points in the file system.
+
+     -Z            Compress archive using compress.
+
+     The options [-014578] can be used to select one of the compiled-in backup
+     devices, /dev/rstN.
+
+FILES
+     /dev/rst0  The default archive name
+
+SEE ALSO
+     pax(1), cpio(1)
+
+AUTHOR
+     Keith Muller at the University of California, San Diego
+
+ERRORS
+     tar will exit with one of the following values:
+
+     0   All files were processed successfully.
+
+     1   An error occured.
+
+     Whenever tar cannot create a file or a link when extracting an archive or
+     cannot find a file while writing an archive, or cannot preserve the user
+     ID, group ID, file mode or access and modification times when the -p
+     options is specified, a diagnostic message is written to standard error
+     and a non-zero exit value will be returned, but processing will continue.
+     In the case where tar cannot create a link to a file, tar will not create
+     a second copy of the file.
+
+     If the extraction of a file from an archive is prematurely terminated by
+     a signal or error, tar may have only partially extracted the file the
+     user wanted.  Additionally, the file modes of extracted files and direc-
+     tories may have incorrect file bits, and the modification and access
+     times may be wrong.
+
+     If the creation of an archive is prematurely terminated by a signal or
+     error, tar may have only partially created the archive which may violate
+     the specific archive format specification.
+
+BSD                              June 11, 1996                             BSD
+ 
+</pre>
+</p>
+			<p></p>
+		
+		</div>
+	</body>
+
+</html>

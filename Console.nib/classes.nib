@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>clearConsole</key>
+				<string>id</string>
+				<key>searchText</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>ConsoleController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>consoleTabView</key>
+				<string>id</string>
+				<key>consoleToolbar</key>
+				<string>id</string>
+				<key>consoleWindow</key>
+				<string>id</string>
+				<key>searchFieldView</key>
+				<string>id</string>
+				<key>searchTextView</key>
+				<string>NSTextView</string>
+				<key>textView</key>
+				<string>NSTextView</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSWindowController</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

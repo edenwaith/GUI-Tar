@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		080E96DCFE201CFB7F000001 = {
+			fileRef = 29B97318FDCFA39411CA2CEA;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		080E96DDFE201D6D7F000001 = {
+			children = (
+				84959C68049DA51D0029C407,
+				84959C67049DA51D0029C407,
+				84F45553049EE3A00029C407,
+				84F45554049EE3A00029C407,
+				84F45557049EE3B00029C407,
+				84F45558049EE3B00029C407,
+				847ECA500612D22C000C5867,
+				847ECA4F0612D22C000C5867,
+				84B9898405A9A3E30022BD5D,
+				84B9898505A9A3E30022BD5D,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C165CFE840E0CC02AAC07 = {
+			children = (
+				089C165DFE840E0CC02AAC07,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C165DFE840E0CC02AAC07 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			name = English;
+			path = English.lproj/InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C165EFE840E0CC02AAC07 = {
+			fileRef = 089C165CFE840E0CC02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//080
+//081
+//082
+//083
+//084
+//100
+//101
+//102
+//103
+//104
+		1058C7A0FEA54F0111CA2CBB = {
+			children = (
+				84BD009805CB413D000C5867,
+			);
+			isa = PBXGroup;
+			name = "Linked Frameworks";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB = {
+			children = (
+				29B97325FDCFA39411CA2CEA,
+				29B97324FDCFA39411CA2CEA,
+			);
+			isa = PBXGroup;
+			name = "Other Frameworks";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//100
+//101
+//102
+//103
+//104
+//170
+//171
+//172
+//173
+//174
+		17587328FF379C6511CA2CBB = {
+			explicitFileType = wrapper.application;
+			isa = PBXFileReference;
+			path = "GUI Tar.app";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+//170
+//171
+//172
+//173
+//174
+//190
+//191
+//192
+//193
+//194
+		19C28FACFE9D520D11CA2CBB = {
+			children = (
+				17587328FF379C6511CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//190
+//191
+//192
+//193
+//194
+//290
+//291
+//292
+//293
+//294
+		29B97313FDCFA39411CA2CEA = {
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA,
+				4A9504CDFFE6A4B311CA0CBA,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			projectDirPath = "";
+			targets = (
+				29B97326FDCFA39411CA2CEA,
+			);
+		};
+		29B97314FDCFA39411CA2CEA = {
+			children = (
+				080E96DDFE201D6D7F000001,
+				29B97315FDCFA39411CA2CEA,
+				29B97317FDCFA39411CA2CEA,
+				29B97323FDCFA39411CA2CEA,
+				19C28FACFE9D520D11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = "GUI Tar";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA = {
+			children = (
+				29B97316FDCFA39411CA2CEA,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97316FDCFA39411CA2CEA = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = main.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA = {
+			children = (
+				84ADDE85075AA4D000237806,
+				84AEA82505DDAE6A000C5867,
+				29B97318FDCFA39411CA2CEA,
+				089C165CFE840E0CC02AAC07,
+				84E36D8605E2BF70000C5867,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA = {
+			children = (
+				29B97319FDCFA39411CA2CEA,
+			);
+			isa = PBXVariantGroup;
+			name = MainMenu.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97319FDCFA39411CA2CEA = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = English.lproj/MainMenu.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA = {
+			children = (
+				1058C7A0FEA54F0111CA2CBB,
+				1058C7A2FEA54F0111CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97324FDCFA39411CA2CEA = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		29B97325FDCFA39411CA2CEA = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		29B97326FDCFA39411CA2CEA = {
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA,
+				29B97328FDCFA39411CA2CEA,
+				29B9732BFDCFA39411CA2CEA,
+				29B9732DFDCFA39411CA2CEA,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXApplicationTarget;
+			name = "GUI Tar";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "GUI Tar";
+			productReference = 17587328FF379C6511CA2CBB;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tar</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tar</string>
+			<key>CFBundleTypeName</key>
+			<string>Tape archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rar</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>rar</string>
+			<key>CFBundleTypeName</key>
+			<string>Rar</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tgz</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tgz</string>
+			<key>CFBundleTypeName</key>
+			<string>Gzip tape archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>zip</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>zip</string>
+			<key>CFBundleTypeName</key>
+			<string>Zip archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>gz</string>
+				<string>z</string>
+				<string>svgz</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>gz</string>
+			<key>CFBundleTypeName</key>
+			<string>Gzip file</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>Z</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>Z</string>
+			<key>CFBundleTypeName</key>
+			<string>Compressed file</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>taz</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>taz</string>
+			<key>CFBundleTypeName</key>
+			<string>Compressed tape archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>bz</string>
+				<string>bz2</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>bzip2</string>
+			<key>CFBundleTypeName</key>
+			<string>Bzip2</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>GUI Tar</string>
+	<key>CFBundleGetInfoString</key>
+	<string>GUI Tar 1.0.2</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>GUI Tar Help</string>
+	<key>CFBundleIconFile</key>
+	<string>guitar</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.edenwaith.guitar</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>GUI Tar</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>4</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+		29B97327FDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				84959C6A049DA51D0029C407,
+				84F45555049EE3A00029C407,
+				84F45559049EE3B00029C407,
+				84B9898605A9A3E30022BD5D,
+				847ECA520612D22C000C5867,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B97328FDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001,
+				089C165EFE840E0CC02AAC07,
+				8484D39C05BCAB2F000C5867,
+				84AEA82905DDAEE6000C5867,
+				84AEA82A05DDAEE6000C5867,
+				84AEA82B05DDAEE6000C5867,
+				84AEA83805DDB15F000C5867,
+				84AEA83905DDB15F000C5867,
+				84AEA83A05DDB15F000C5867,
+				84AEA83B05DDB15F000C5867,
+				84E36D9805E2BF70000C5867,
+				84AD6AB90759A90D002E7132,
+				84ADDE87075AA54800237806,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732BFDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA,
+				84959C69049DA51D0029C407,
+				84F45556049EE3A00029C407,
+				84F4555A049EE3B00029C407,
+				84B9898705A9A3E30022BD5D,
+				847ECA510612D22C000C5867,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732CFDCFA39411CA2CEA = {
+			fileRef = 29B97316FDCFA39411CA2CEA;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		29B9732DFDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				84BD009C05CB424E000C5867,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+//290
+//291
+//292
+//293
+//294
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+		4A9504CCFFE6A4B311CA0CBA = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		4A9504CDFFE6A4B311CA0CBA = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+//840
+//841
+//842
+//843
+//844
+		847ECA4F0612D22C000C5867 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = PrefController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		847ECA500612D22C000C5867 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = PrefController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		847ECA510612D22C000C5867 = {
+			fileRef = 847ECA4F0612D22C000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		847ECA520612D22C000C5867 = {
+			fileRef = 847ECA500612D22C000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8484D39B05BCAB2F000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = guitar.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		8484D39C05BCAB2F000C5867 = {
+			fileRef = 8484D39B05BCAB2F000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84959C67049DA51D0029C407 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = WinController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84959C68049DA51D0029C407 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = WinController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84959C69049DA51D0029C407 = {
+			fileRef = 84959C67049DA51D0029C407;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84959C6A049DA51D0029C407 = {
+			fileRef = 84959C68049DA51D0029C407;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AD6AB80759A90D002E7132 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = rar.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AD6AB90759A90D002E7132 = {
+			fileRef = 84AD6AB80759A90D002E7132;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84ADDE85075AA4D000237806 = {
+			children = (
+				84ADDE86075AA54800237806,
+			);
+			isa = PBXGroup;
+			name = "UNIX Utilities";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84ADDE86075AA54800237806 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "compiled.mach-o.executable";
+			path = unrar;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84ADDE87075AA54800237806 = {
+			fileRef = 84ADDE86075AA54800237806;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA82505DDAE6A000C5867 = {
+			children = (
+				8484D39B05BCAB2F000C5867,
+				84AEA82605DDAEE6000C5867,
+				84AEA82705DDAEE6000C5867,
+				84AEA82805DDAEE6000C5867,
+				84AEA83405DDB15F000C5867,
+				84AEA83505DDB15F000C5867,
+				84AEA83605DDB15F000C5867,
+				84AEA83705DDB15F000C5867,
+				84AD6AB80759A90D002E7132,
+			);
+			isa = PBXGroup;
+			name = icons;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA82605DDAEE6000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = bzip2.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA82705DDAEE6000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = gz.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA82805DDAEE6000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = tar.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA82905DDAEE6000C5867 = {
+			fileRef = 84AEA82605DDAEE6000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA82A05DDAEE6000C5867 = {
+			fileRef = 84AEA82705DDAEE6000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA82B05DDAEE6000C5867 = {
+			fileRef = 84AEA82805DDAEE6000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA83405DDB15F000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = taz.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA83505DDB15F000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = tgz.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA83605DDB15F000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = z.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA83705DDB15F000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = zip.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84AEA83805DDB15F000C5867 = {
+			fileRef = 84AEA83405DDB15F000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA83905DDB15F000C5867 = {
+			fileRef = 84AEA83505DDB15F000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA83A05DDB15F000C5867 = {
+			fileRef = 84AEA83605DDB15F000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84AEA83B05DDB15F000C5867 = {
+			fileRef = 84AEA83705DDB15F000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84B9898405A9A3E30022BD5D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = NSString_PathUtils.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84B9898505A9A3E30022BD5D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = NSString_PathUtils.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84B9898605A9A3E30022BD5D = {
+			fileRef = 84B9898405A9A3E30022BD5D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84B9898705A9A3E30022BD5D = {
+			fileRef = 84B9898505A9A3E30022BD5D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84BD009805CB413D000C5867 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		84BD009C05CB424E000C5867 = {
+			fileRef = 84BD009805CB413D000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84E36D8605E2BF70000C5867 = {
+			includeInIndex = 1;
+			isa = PBXFileReference;
+			lastKnownFileType = folder;
+			path = Help;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84E36D9805E2BF70000C5867 = {
+			fileRef = 84E36D8605E2BF70000C5867;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84F45553049EE3A00029C407 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = EController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84F45554049EE3A00029C407 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = EController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84F45555049EE3A00029C407 = {
+			fileRef = 84F45553049EE3A00029C407;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84F45556049EE3A00029C407 = {
+			fileRef = 84F45554049EE3A00029C407;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84F45557049EE3B00029C407 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = CController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84F45558049EE3B00029C407 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = CController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		84F45559049EE3B00029C407 = {
+			fileRef = 84F45557049EE3B00029C407;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		84F4555A049EE3B00029C407 = {
+			fileRef = 84F45558049EE3B00029C407;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA;
+}

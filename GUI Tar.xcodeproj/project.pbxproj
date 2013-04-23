@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* GUI Tar */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 849C3C940901BBD700B67313 /* Build configuration list for PBXApplicationTarget "GUI Tar" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = "GUI Tar";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "GUI Tar";
+			productReference = 17587328FF379C6511CA2CBB /* GUI Tar.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tar</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tar</string>
+			<key>CFBundleTypeName</key>
+			<string>Tape archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rar</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>rar</string>
+			<key>CFBundleTypeName</key>
+			<string>Rar</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tgz</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tgz</string>
+			<key>CFBundleTypeName</key>
+			<string>Gzip tape archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>zip</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>zip</string>
+			<key>CFBundleTypeName</key>
+			<string>Zip archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>gz</string>
+				<string>z</string>
+				<string>svgz</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>gz</string>
+			<key>CFBundleTypeName</key>
+			<string>Gzip file</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>Z</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>Z</string>
+			<key>CFBundleTypeName</key>
+			<string>Compressed file</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>taz</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>taz</string>
+			<key>CFBundleTypeName</key>
+			<string>Compressed tape archive</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>bz</string>
+				<string>bz2</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>bzip2</string>
+			<key>CFBundleTypeName</key>
+			<string>Bzip2</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>GUI Tar</string>
+	<key>CFBundleGetInfoString</key>
+	<string>GUI Tar 1.1.0</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>GUI Tar Help</string>
+	<key>CFBundleIconFile</key>
+	<string>guitar</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.edenwaith.guitar</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>GUI Tar</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>5</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		843269C70E0357E300334A05 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 843269C60E0357E300334A05 /* Preferences.nib */; };
+		843269D50E035FAC00334A05 /* PreferenceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 843269D30E035FAC00334A05 /* PreferenceController.h */; };
+		843269D60E035FAC00334A05 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843269D40E035FAC00334A05 /* PreferenceController.m */; };
+		843269D70E035FAC00334A05 /* PreferenceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 843269D30E035FAC00334A05 /* PreferenceController.h */; };
+		843269D80E035FAC00334A05 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843269D40E035FAC00334A05 /* PreferenceController.m */; };
+		843DC4AF0A86D02500AC2848 /* WinController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84959C68049DA51D0029C407 /* WinController.h */; };
+		843DC4B00A86D02500AC2848 /* EController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F45553049EE3A00029C407 /* EController.h */; };
+		843DC4B10A86D02500AC2848 /* CController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F45557049EE3B00029C407 /* CController.h */; };
+		843DC4B50A86D02500AC2848 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		843DC4B60A86D02500AC2848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		843DC4B70A86D02500AC2848 /* guitar.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8484D39B05BCAB2F000C5867 /* guitar.icns */; };
+		843DC4BB0A86D02500AC2848 /* taz.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84AEA83405DDB15F000C5867 /* taz.icns */; };
+		843DC4C00A86D02500AC2848 /* rar.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84AD6AB80759A90D002E7132 /* rar.icns */; };
+		843DC4C30A86D02500AC2848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		843DC4C40A86D02500AC2848 /* WinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84959C67049DA51D0029C407 /* WinController.m */; };
+		843DC4C50A86D02500AC2848 /* EController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F45554049EE3A00029C407 /* EController.m */; };
+		843DC4C60A86D02500AC2848 /* CController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F45558049EE3B00029C407 /* CController.m */; };
+		843DC4CA0A86D02500AC2848 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BD009805CB413D000C5867 /* Cocoa.framework */; };
+		843DC4D50A86E36300AC2848 /* 7z.icns in Resources */ = {isa = PBXBuildFile; fileRef = 843DC4D40A86E36300AC2848 /* 7z.icns */; };
+		843DC4D60A86E36300AC2848 /* 7z.icns in Resources */ = {isa = PBXBuildFile; fileRef = 843DC4D40A86E36300AC2848 /* 7z.icns */; };
+		844EE11A12C831AB002D018C /* NSFileManager+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 844EE11812C831AB002D018C /* NSFileManager+Utils.h */; };
+		844EE11B12C831AB002D018C /* NSFileManager+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EE11912C831AB002D018C /* NSFileManager+Utils.m */; };
+		844EE11C12C831AB002D018C /* NSFileManager+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 844EE11812C831AB002D018C /* NSFileManager+Utils.h */; };
+		844EE11D12C831AB002D018C /* NSFileManager+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EE11912C831AB002D018C /* NSFileManager+Utils.m */; };
+		8484D39C05BCAB2F000C5867 /* guitar.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8484D39B05BCAB2F000C5867 /* guitar.icns */; };
+		84959C69049DA51D0029C407 /* WinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84959C67049DA51D0029C407 /* WinController.m */; };
+		84959C6A049DA51D0029C407 /* WinController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84959C68049DA51D0029C407 /* WinController.h */; };
+		849669BD0F3949AC005518E1 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 849669900F3949AC005518E1 /* Help */; };
+		849669BE0F3949AC005518E1 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 849669900F3949AC005518E1 /* Help */; };
+		84AD6AB90759A90D002E7132 /* rar.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84AD6AB80759A90D002E7132 /* rar.icns */; };
+		84AEA83805DDB15F000C5867 /* taz.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84AEA83405DDB15F000C5867 /* taz.icns */; };
+		84B4F82C0F20412100862BD2 /* Console.nib in Resources */ = {isa = PBXBuildFile; fileRef = 84B4F82B0F20412100862BD2 /* Console.nib */; };
+		84B4F82D0F20412100862BD2 /* Console.nib in Resources */ = {isa = PBXBuildFile; fileRef = 84B4F82B0F20412100862BD2 /* Console.nib */; };
+		84B4F8420F20424800862BD2 /* Clear.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84B4F8410F20424800862BD2 /* Clear.tiff */; };
+		84B4F8430F20424800862BD2 /* Clear.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84B4F8410F20424800862BD2 /* Clear.tiff */; };
+		84BD009C05CB424E000C5867 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BD009805CB413D000C5867 /* Cocoa.framework */; };
+		84CEF9C20F22F5AF005A3102 /* ConsoleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CEF9C00F22F5AF005A3102 /* ConsoleController.h */; };
+		84CEF9C30F22F5AF005A3102 /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CEF9C10F22F5AF005A3102 /* ConsoleController.m */; };
+		84CEF9C40F22F5AF005A3102 /* ConsoleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CEF9C00F22F5AF005A3102 /* ConsoleController.h */; };
+		84CEF9C50F22F5AF005A3102 /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CEF9C10F22F5AF005A3102 /* ConsoleController.m */; };
+		84E73EB00C9A17C400805F77 /* AddFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAC0C9A17C400805F77 /* AddFile.tiff */; };
+		84E73EB10C9A17C400805F77 /* AddFile_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAD0C9A17C400805F77 /* AddFile_Pressed.tiff */; };
+		84E73EB20C9A17C400805F77 /* RemoveFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAE0C9A17C400805F77 /* RemoveFile.tiff */; };
+		84E73EB30C9A17C400805F77 /* RemoveFile_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAF0C9A17C400805F77 /* RemoveFile_Pressed.tiff */; };
+		84E73EB40C9A17C400805F77 /* AddFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAC0C9A17C400805F77 /* AddFile.tiff */; };
+		84E73EB50C9A17C400805F77 /* AddFile_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAD0C9A17C400805F77 /* AddFile_Pressed.tiff */; };
+		84E73EB60C9A17C400805F77 /* RemoveFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAE0C9A17C400805F77 /* RemoveFile.tiff */; };
+		84E73EB70C9A17C400805F77 /* RemoveFile_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 84E73EAF0C9A17C400805F77 /* RemoveFile_Pressed.tiff */; };
+		84E9A2EB0F479F2600F0A1C2 /* unrar in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A2EA0F479F2600F0A1C2 /* unrar */; };
+		84E9A2EC0F479F2600F0A1C2 /* unrar in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A2EA0F479F2600F0A1C2 /* unrar */; };
+		84F27B4E0F36544F00364AB8 /* 7za in Resources */ = {isa = PBXBuildFile; fileRef = 84F27B4C0F36544F00364AB8 /* 7za */; };
+		84F27B500F36544F00364AB8 /* 7za in Resources */ = {isa = PBXBuildFile; fileRef = 84F27B4C0F36544F00364AB8 /* 7za */; };
+		84F45555049EE3A00029C407 /* EController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F45553049EE3A00029C407 /* EController.h */; };
+		84F45556049EE3A00029C407 /* EController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F45554049EE3A00029C407 /* EController.m */; };
+		84F45559049EE3B00029C407 /* CController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F45557049EE3B00029C407 /* CController.h */; };
+		84F4555A049EE3B00029C407 /* CController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F45558049EE3B00029C407 /* CController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17587328FF379C6511CA2CBB /* GUI Tar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "GUI Tar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		843269C60E0357E300334A05 /* Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Preferences.nib; sourceTree = "<group>"; };
+		843269D30E035FAC00334A05 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		843269D40E035FAC00334A05 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		843DC4CF0A86D02500AC2848 /* Info-GUI_Tar__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-GUI_Tar__Upgraded_.plist"; sourceTree = "<group>"; };
+		843DC4D00A86D02600AC2848 /* GUI Tar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GUI Tar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		843DC4D40A86E36300AC2848 /* 7z.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = 7z.icns; sourceTree = "<group>"; };
+		844EE11812C831AB002D018C /* NSFileManager+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Utils.h"; path = "Source/Utils/NSFileManager+Utils.h"; sourceTree = "<group>"; };
+		844EE11912C831AB002D018C /* NSFileManager+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Utils.m"; path = "Source/Utils/NSFileManager+Utils.m"; sourceTree = "<group>"; };
+		8484D39B05BCAB2F000C5867 /* guitar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = guitar.icns; sourceTree = "<group>"; };
+		84959C67049DA51D0029C407 /* WinController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WinController.m; sourceTree = "<group>"; };
+		84959C68049DA51D0029C407 /* WinController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WinController.h; sourceTree = "<group>"; };
+		849669900F3949AC005518E1 /* Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Help; sourceTree = "<group>"; };
+		84AD6AB80759A90D002E7132 /* rar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = rar.icns; sourceTree = "<group>"; };
+		84AEA83405DDB15F000C5867 /* taz.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = taz.icns; sourceTree = "<group>"; };
+		84B4F82B0F20412100862BD2 /* Console.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Console.nib; sourceTree = "<group>"; };
+		84B4F8410F20424800862BD2 /* Clear.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Clear.tiff; sourceTree = "<group>"; };
+		84BD009805CB413D000C5867 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		84CEF9C00F22F5AF005A3102 /* ConsoleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleController.h; sourceTree = "<group>"; };
+		84CEF9C10F22F5AF005A3102 /* ConsoleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleController.m; sourceTree = "<group>"; };
+		84E73EAC0C9A17C400805F77 /* AddFile.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AddFile.tiff; sourceTree = "<group>"; };
+		84E73EAD0C9A17C400805F77 /* AddFile_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AddFile_Pressed.tiff; sourceTree = "<group>"; };
+		84E73EAE0C9A17C400805F77 /* RemoveFile.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RemoveFile.tiff; sourceTree = "<group>"; };
+		84E73EAF0C9A17C400805F77 /* RemoveFile_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RemoveFile_Pressed.tiff; sourceTree = "<group>"; };
+		84E9A2EA0F479F2600F0A1C2 /* unrar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = unrar; sourceTree = "<group>"; };
+		84F27B4C0F36544F00364AB8 /* 7za */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = 7za; sourceTree = "<group>"; };
+		84F45553049EE3A00029C407 /* EController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EController.h; sourceTree = "<group>"; };
+		84F45554049EE3A00029C407 /* EController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = EController.m; sourceTree = "<group>"; };
+		84F45557049EE3B00029C407 /* CController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CController.h; sourceTree = "<group>"; };
+		84F45558049EE3B00029C407 /* CController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD009C05CB424E000C5867 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843DC4C90A86D02500AC2848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843DC4CA0A86D02500AC2848 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				844EE11512C830F6002D018C /* Controllers */,
+				844EE11612C83107002D018C /* Utils */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BD009805CB413D000C5867 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* GUI Tar.app */,
+				843DC4D00A86D02600AC2848 /* GUI Tar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* GUI Tar */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				843DC4CF0A86D02500AC2848 /* Info-GUI_Tar__Upgraded_.plist */,
+			);
+			name = "GUI Tar";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				849669900F3949AC005518E1 /* Help */,
+				84E73EAB0C9A17C300805F77 /* images */,
+				8425F98E0A8ADABD00EAD4D7 /* UNIX Executables */,
+				84AEA82505DDAE6A000C5867 /* icons */,
+				84CEF9E90F22F86C005A3102 /* NIBs */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8425F98E0A8ADABD00EAD4D7 /* UNIX Executables */ = {
+			isa = PBXGroup;
+			children = (
+				84F27B4C0F36544F00364AB8 /* 7za */,
+				84E9A2EA0F479F2600F0A1C2 /* unrar */,
+			);
+			path = "UNIX Executables";
+			sourceTree = "<group>";
+		};
+		844EE11512C830F6002D018C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84959C68049DA51D0029C407 /* WinController.h */,
+				84959C67049DA51D0029C407 /* WinController.m */,
+				84F45553049EE3A00029C407 /* EController.h */,
+				84F45554049EE3A00029C407 /* EController.m */,
+				84F45557049EE3B00029C407 /* CController.h */,
+				84F45558049EE3B00029C407 /* CController.m */,
+				843269D30E035FAC00334A05 /* PreferenceController.h */,
+				843269D40E035FAC00334A05 /* PreferenceController.m */,
+				84CEF9C00F22F5AF005A3102 /* ConsoleController.h */,
+				84CEF9C10F22F5AF005A3102 /* ConsoleController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		844EE11612C83107002D018C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				844EE11812C831AB002D018C /* NSFileManager+Utils.h */,
+				844EE11912C831AB002D018C /* NSFileManager+Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		84AEA82505DDAE6A000C5867 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				843DC4D40A86E36300AC2848 /* 7z.icns */,
+				8484D39B05BCAB2F000C5867 /* guitar.icns */,
+				84AD6AB80759A90D002E7132 /* rar.icns */,
+				84AEA83405DDB15F000C5867 /* taz.icns */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		84CEF9E90F22F86C005A3102 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				84B4F82B0F20412100862BD2 /* Console.nib */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				843269C60E0357E300334A05 /* Preferences.nib */,
+			);
+			name = NIBs;
+			sourceTree = "<group>";
+		};
+		84E73EAB0C9A17C300805F77 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84B4F8410F20424800862BD2 /* Clear.tiff */,
+				84E73EAC0C9A17C400805F77 /* AddFile.tiff */,
+				84E73EAD0C9A17C400805F77 /* AddFile_Pressed.tiff */,
+				84E73EAE0C9A17C400805F77 /* RemoveFile.tiff */,
+				84E73EAF0C9A17C400805F77 /* RemoveFile_Pressed.tiff */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84959C6A049DA51D0029C407 /* WinController.h in Headers */,
+				84F45555049EE3A00029C407 /* EController.h in Headers */,
+				84F45559049EE3B00029C407 /* CController.h in Headers */,
+				843269D50E035FAC00334A05 /* PreferenceController.h in Headers */,
+				84CEF9C40F22F5AF005A3102 /* ConsoleController.h in Headers */,
+				844EE11C12C831AB002D018C /* NSFileManager+Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843DC4AE0A86D02500AC2848 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843DC4AF0A86D02500AC2848 /* WinController.h in Headers */,
+				843DC4B00A86D02500AC2848 /* EController.h in Headers */,
+				843DC4B10A86D02500AC2848 /* CController.h in Headers */,
+				843269D70E035FAC00334A05 /* PreferenceController.h in Headers */,
+				84CEF9C20F22F5AF005A3102 /* ConsoleController.h in Headers */,
+				844EE11A12C831AB002D018C /* NSFileManager+Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		843DC4AD0A86D02500AC2848 /* GUI Tar (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843DC4CB0A86D02500AC2848 /* Build configuration list for PBXNativeTarget "GUI Tar (Upgraded)" */;
+			buildPhases = (
+				843DC4AE0A86D02500AC2848 /* Headers */,
+				843DC4B40A86D02500AC2848 /* Resources */,
+				843DC4C20A86D02500AC2848 /* Sources */,
+				843DC4C90A86D02500AC2848 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GUI Tar (Upgraded)";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "GUI Tar";
+			productReference = 843DC4D00A86D02600AC2848 /* GUI Tar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 849C3C980901BBD700B67313 /* Build configuration list for PBXProject "GUI Tar" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* GUI Tar */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29B97326FDCFA39411CA2CEA /* GUI Tar */,
+				843DC4AD0A86D02500AC2848 /* GUI Tar (Upgraded) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				8484D39C05BCAB2F000C5867 /* guitar.icns in Resources */,
+				84AEA83805DDB15F000C5867 /* taz.icns in Resources */,
+				84AD6AB90759A90D002E7132 /* rar.icns in Resources */,
+				843DC4D50A86E36300AC2848 /* 7z.icns in Resources */,
+				84E73EB00C9A17C400805F77 /* AddFile.tiff in Resources */,
+				84E73EB10C9A17C400805F77 /* AddFile_Pressed.tiff in Resources */,
+				84E73EB20C9A17C400805F77 /* RemoveFile.tiff in Resources */,
+				84E73EB30C9A17C400805F77 /* RemoveFile_Pressed.tiff in Resources */,
+				843269C70E0357E300334A05 /* Preferences.nib in Resources */,
+				84B4F82D0F20412100862BD2 /* Console.nib in Resources */,
+				84B4F8430F20424800862BD2 /* Clear.tiff in Resources */,
+				84F27B500F36544F00364AB8 /* 7za in Resources */,
+				849669BE0F3949AC005518E1 /* Help in Resources */,
+				84E9A2EC0F479F2600F0A1C2 /* unrar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843DC4B40A86D02500AC2848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843DC4B50A86D02500AC2848 /* MainMenu.nib in Resources */,
+				843DC4B60A86D02500AC2848 /* InfoPlist.strings in Resources */,
+				843DC4B70A86D02500AC2848 /* guitar.icns in Resources */,
+				843DC4BB0A86D02500AC2848 /* taz.icns in Resources */,
+				843DC4C00A86D02500AC2848 /* rar.icns in Resources */,
+				843DC4D60A86E36300AC2848 /* 7z.icns in Resources */,
+				84E73EB40C9A17C400805F77 /* AddFile.tiff in Resources */,
+				84E73EB50C9A17C400805F77 /* AddFile_Pressed.tiff in Resources */,
+				84E73EB60C9A17C400805F77 /* RemoveFile.tiff in Resources */,
+				84E73EB70C9A17C400805F77 /* RemoveFile_Pressed.tiff in Resources */,
+				84B4F82C0F20412100862BD2 /* Console.nib in Resources */,
+				84B4F8420F20424800862BD2 /* Clear.tiff in Resources */,
+				84F27B4E0F36544F00364AB8 /* 7za in Resources */,
+				849669BD0F3949AC005518E1 /* Help in Resources */,
+				84E9A2EB0F479F2600F0A1C2 /* unrar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				84959C69049DA51D0029C407 /* WinController.m in Sources */,
+				84F45556049EE3A00029C407 /* EController.m in Sources */,
+				84F4555A049EE3B00029C407 /* CController.m in Sources */,
+				843269D60E035FAC00334A05 /* PreferenceController.m in Sources */,
+				84CEF9C50F22F5AF005A3102 /* ConsoleController.m in Sources */,
+				844EE11D12C831AB002D018C /* NSFileManager+Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843DC4C20A86D02500AC2848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843DC4C30A86D02500AC2848 /* main.m in Sources */,
+				843DC4C40A86D02500AC2848 /* WinController.m in Sources */,
+				843DC4C50A86D02500AC2848 /* EController.m in Sources */,
+				843DC4C60A86D02500AC2848 /* CController.m in Sources */,
+				843269D80E035FAC00334A05 /* PreferenceController.m in Sources */,
+				84CEF9C30F22F5AF005A3102 /* ConsoleController.m in Sources */,
+				844EE11B12C831AB002D018C /* NSFileManager+Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		843DC4CC0A86D02500AC2848 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-GUI_Tar__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		843DC4CD0A86D02500AC2848 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-GUI_Tar__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		843DC4CE0A86D02500AC2848 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-GUI_Tar__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		849C3C950901BBD700B67313 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		849C3C960901BBD700B67313 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		849C3C970901BBD700B67313 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "GUI Tar";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		849C3C990901BBD700B67313 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				OTHER_LDFLAGS_ppc = "-prebind";
+				PREBINDING = NO;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		849C3C9A0901BBD700B67313 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				OTHER_LDFLAGS_ppc = "-prebind";
+				PREBINDING = NO;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Deployment;
+		};
+		849C3C9B0901BBD700B67313 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = 4.0;
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 4.0;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				OTHER_LDFLAGS_ppc = "-prebind";
+				PREBINDING = NO;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		843DC4CB0A86D02500AC2848 /* Build configuration list for PBXNativeTarget "GUI Tar (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843DC4CC0A86D02500AC2848 /* Development */,
+				843DC4CD0A86D02500AC2848 /* Deployment */,
+				843DC4CE0A86D02500AC2848 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		849C3C940901BBD700B67313 /* Build configuration list for PBXApplicationTarget "GUI Tar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849C3C950901BBD700B67313 /* Development */,
+				849C3C960901BBD700B67313 /* Deployment */,
+				849C3C970901BBD700B67313 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		849C3C980901BBD700B67313 /* Build configuration list for PBXProject "GUI Tar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849C3C990901BBD700B67313 /* Development */,
+				849C3C9A0901BBD700B67313 /* Deployment */,
+				849C3C9B0901BBD700B67313 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

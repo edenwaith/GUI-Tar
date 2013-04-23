@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/sgml/loosedtd.html">
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="keywords" content="compress, uncompress, UNIX compress, Z, man, manual, man page">
+		<meta name="description" content="uncompress man page">
+		<link media="all" rel="stylesheet" href="../sty/task_style.css">
+		<title>uncompress man page</title>
+	</head>
+
+    <body>
+    
+    	<div id="banner">
+		<a name="uncompress-man"></a>
+			<div id="machelp">
+				<a class="bread" href="../GUITarHelp.html">GUI Tar Help</a>
+			</div>
+		</div>
+		
+		<hr class = "hidden">
+		
+		<div id="mainbox">
+
+
+<p>
+<pre>
+COMPRESS(1)             System General Commands Manual             COMPRESS(1)
+
+NAME
+     compress, uncompress - compress and expand data
+
+SYNOPSIS
+     compress [-cfv] [-b bits] [file ...]
+     uncompress [-cfv] [file ...]
+
+DESCRIPTION
+     compress reduces the size of the named files using adaptive Lempel-Ziv
+     coding.  Each file is renamed to the same name plus the extension ``.Z''.
+     As many of the modification time, access time, file flags, file mode,
+     user ID, and group ID as allowed by permissions are retained in the new
+     file.  If compression would not reduce the size of a file, the file is
+     ignored.
+
+     uncompress restores the compressed files to their original form, renaming
+     the files by deleting the ``.Z'' extension.
+
+     If renaming the files would cause files to be overwritten and the stan-
+     dard input device is a terminal, the user is prompted (on the standard
+     error output) for confirmation.  If prompting is not possible or confir-
+     mation is not received, the files are not overwritten.
+
+     If no files are specified, the standard input is compressed or uncom-
+     pressed to the standard output.  If either the input and output files are
+     not regular files, the checks for reduction in size and file overwriting
+     are not performed, the input file is not removed, and the attributes of
+     the input file are not retained.
+
+     The options are as follows:
+
+     -b      Specify the bits code limit (see below).
+
+     -c      Compressed or uncompressed output is written to the standard out-
+             put.  No files are modified.
+
+     -f      Force compression of file, even if it is not actually reduced in
+             size.  Additionally, files are overwritten without prompting for
+             confirmation.
+
+     -v      Print the percentage reduction of each file.
+
+     compress uses a modified Lempel-Ziv algorithm.  Common substrings in the
+     file are first replaced by 9-bit codes 257 and up.  When code 512 is
+     reached, the algorithm switches to 10-bit codes and continues to use more
+     bits until the limit specified by the -b flag is reached (the default is
+     16).  Bits must be between 9 and 16.
+
+     After the bits limit is reached, compress periodically checks the com-
+     pression ratio.  If it is increasing, compress continues to use the
+     existing code dictionary.  However, if the compression ratio decreases,
+     compress discards the table of substrings and rebuilds it from scratch.
+     This allows the algorithm to adapt to the next "block" of the file.
+
+     The -b flag is omitted for uncompress since the bits parameter specified
+     during compression is encoded within the output, along with a magic num-
+     ber to ensure that neither decompression of random data nor recompression
+     of compressed data is attempted.
+
+     The amount of compression obtained depends on the size of the input, the
+     number of bits per code, and the distribution of common substrings.  Typ-
+     ically, text such as source code or English is reduced by 50-60%.  Com-
+     pression is generally much better than that achieved by Huffman coding
+     (as used in the historical command pack), or adaptive Huffman coding (as
+     used in the historical command compact), and takes less time to compute.
+
+     The compress utility exits 0 on success, and &gt;0 if an error occurs.
+
+SEE ALSO
+     zcat(1)
+
+     Welch, Terry A., "A Technique for High Performance Data Compression",
+     IEEE Computer, 17:6, pp. 8-19, June, 1984.
+
+HISTORY
+     The compress command appeared in 4.3BSD.
+
+4.3 Berkeley Distribution       April 18, 1994       4.3 Berkeley Distribution
+</pre>
+</p>
+			<p></p>
+		
+		</div>
+	</body>
+
+</html>
